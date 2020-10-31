@@ -1,0 +1,16 @@
+.title Problem 1.2
+
+Vin v1 gnd dc=0 ac=1 sin(0 1 100)
+R1 v1 v2 1k
+C1 v2 v3 1u
+R_s v3 gnd 100
+
+.control
+tran 0.1ms 20ms
+* settype volt out
+plot v1 v2 v3
+ac dec 10 100 1Meg
+settype phase v1 v2 v3
+plot cph(v1) cph(v2) cph(v3)
+.endc
+.end
