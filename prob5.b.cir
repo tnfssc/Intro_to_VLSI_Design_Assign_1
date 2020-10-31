@@ -7,6 +7,6 @@ C1 Vout gnd 1m
 .control
 tran 0.01p 20p
 run
-plot Vin
+plot Vout
 .endc
 .end
