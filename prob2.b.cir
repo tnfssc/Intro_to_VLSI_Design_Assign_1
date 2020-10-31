@@ -1,0 +1,15 @@
+.title Problem 2.2
+
+Vin v1 gnd dc=2.5
+R1 v1 v2 2k
+D1 v2 v3 diode
+R2 v3 v4 2k
+D2 v4 gnd diode
+
+.model diode D(Is=1E-14)
+
+.control
+op
+print i(Vin)
+.endc
+.end
