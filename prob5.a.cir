@@ -5,7 +5,7 @@ R1 Vin Vout 1k
 C1 Vout gnd 1m
 
 .control
-tran 0.01p 20p
+tran 0.01p 0.1p
 run
 plot Vin
 .endc
