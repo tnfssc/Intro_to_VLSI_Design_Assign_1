@@ -1,0 +1,12 @@
+.title Problem 5.2
+
+V1 Vin gnd pulse(0 1 0 0.01n 0 5 5 0)
+R1 Vin Vout 1k
+C1 Vout gnd 1m
+
+.control
+tran 0.01p 20p
+run
+plot Vin
+.endc
+.end
