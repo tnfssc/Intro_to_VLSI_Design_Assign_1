@@ -10,6 +10,6 @@ D2 v4 gnd diode
 
 .control
 op
-print i(Vin)
+print i(Vin) v(v2, v3)
 .endc
 .end
