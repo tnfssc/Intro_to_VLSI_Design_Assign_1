@@ -1,0 +1,14 @@
+.title Problem 3
+
+V1 0 Vin sin(0 1 1k)
+Rin Vin junc 1k
+Rf Vout junc 3k
+G1 0 Vout junc 0 1Meg
+R1 Vout 0 1
+
+.control
+tran 0.1m 2m
+run
+plot Vout Vin
+.endc
+.end
